@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+# function to show the $PATH line by line
+show-path () {
+  sed 's/:/\n/g' <<< "$PATH"
+}
+

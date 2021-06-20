@@ -2,6 +2,7 @@
 
 # function to show the $PATH line by line
 show-path () {
-  sed 's/:/\n/g' <<< "$PATH"
+  # convert Zsh's space-delimited `$path` into a newline-delimited `(F)` array
+  # https://zsh.sourceforge.io/Doc/Release/Expansion.html#Parameter-Expansion-Flags
+  <<<${(F)path}
 }
-

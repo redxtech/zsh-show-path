@@ -6,3 +6,4 @@ show-path () {
   # https://zsh.sourceforge.io/Doc/Release/Expansion.html#Parameter-Expansion-Flags
   <<<${(F)path}
 }
+
